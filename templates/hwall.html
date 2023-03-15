@@ -1,0 +1,57 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block content %}
+       
+        <style>
+            
+            
+            </style>
+
+    </head>
+    <body>
+        
+    <!-- 
+        -->
+        {% for homework in hwork %}
+        <div>
+            <br>  
+            <table class="center" border="4" cellpadding="10"width="800">
+                <tr>
+                    <th colspan=10>Name :- {{homework.name}}</th>
+                </tr>
+                <tr>
+                    <th colspan=10>Roll :- {{ homework.roll }}</th>
+                </tr>
+              
+                
+                <tr>
+                     <th colspan=10>Class:-{{homework.clas}}</th>
+                                                      
+                    </tr>
+                   
+                    <tr>
+                      <th colspan=10>Description:-{{homework.desc}} </th>
+                    </tr>   
+                    <tr>
+                       
+                        </tr><br> 
+                   {% endfor %}
+              </table>      <br>        
+        </div>
+       
+               
+                
+                   
+        
+             
+          
+         
+        <script src="" async defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>   
+   
+      
+
+    </body>
+    {% endblock %}    
+</html>
